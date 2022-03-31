@@ -8,26 +8,15 @@ negato” -->
     $name = $_GET['name'];
     $mail = $_GET['mail'];
     $age = $_GET['age'];
+
+
+    if (strlen($name) > 3 && is_numeric($age) && strpos($mail, '.') && strpos($mail, '@')) { //regolare i dettagli dell'if per il nome, eta' e mail
+        echo 'ACCESS VERIFIED!!!';
+    } else {    // dare accesso negato se non soddisatti i parametri dell'IF
+        echo 'ACCESS DENIED... ';
+    };
+
+
+
+
 ?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snack2</title>
-</head>
-<body>
-
-
-
-
-
-
-
-
-
-</body>
-</html>
